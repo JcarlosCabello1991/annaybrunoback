@@ -38,7 +38,7 @@ export const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 //Routes
-app.use('/annaybruno',invitados);
+app.use('/invitados',invitados);
 
 // Start Server
 app.listen(PORT,'0.0.0.0', () => {
